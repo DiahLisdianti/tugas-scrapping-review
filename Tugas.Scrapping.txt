@@ -1,0 +1,860 @@
+
+
+    !pip install google-search-results
+
+
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps",
+      "q": "martabak",
+      "ll": "@-7.067187,110.4142924,15z",
+      "type": "search",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    local_results = results["local_results"]
+
+    local_results
+
+    [{'position': 1,
+      'title': 'Martabak Kembar 99',
+      'place_id': 'ChIJf0nPsmCJcC4RenIC2-sVmJk',
+      'data_id': '0x2e708960b2cf497f:0x999815ebdb02727a',
+      'data_cid': '11067620186998862458',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708960b2cf497f%3A0x999815ebdb02727a&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708960b2cf497f%3A0x999815ebdb02727a&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.075581199999999,
+       'longitude': 110.4200097},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708960b2cf497f%3A0x999815ebdb02727a%218m2%213d-7.075581199999999%214d110.4200097&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 11,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Meranti Tim. Dlm IV No.31, Padangsari, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50264, Indonesia',
+      'open_state': 'Closed ⋅ Opens 1PM Tue',
+      'hours': 'Closed ⋅ Opens 1PM Tue',
+      'operating_hours': {'monday': 'Closed',
+       'tuesday': '1–10PM',
+       'wednesday': '1–10PM',
+       'thursday': '1–10PM',
+       'friday': '1–10PM',
+       'saturday': '1–10PM',
+       'sunday': '1–10PM'},
+      'phone': '+62 812-2858-7996',
+      'website': 'https://linktr.ee/martabak.kembar99',
+      'service_options': {'dine_in': True,
+       'drive_through': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipOGmQSkDGH6SL8cwxTi1g7vqjlIvuAh04bl2IYX=w92-h92-k-no'},
+     {'position': 2,
+      'title': 'Martabak Dan Kue Bandung Pak Kumis',
+      'place_id': 'ChIJOUBslNuLcC4Rfvfx40CNftI',
+      'data_id': '0x2e708bdb946c4039:0xd27e8d40e3f1f77e',
+      'data_cid': '15167715904872118142',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708bdb946c4039%3A0xd27e8d40e3f1f77e&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708bdb946c4039%3A0xd27e8d40e3f1f77e&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.051336, 'longitude': 110.3952245},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708bdb946c4039%3A0xd27e8d40e3f1f77e%218m2%213d-7.051336%214d110.3952245&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.4,
+      'reviews': 19,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'W9XW+F39, Sekaran, Gunung Pati, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229, Indonesia',
+      'open_state': 'Open ⋅ Closes 11:59PM',
+      'hours': 'Open ⋅ Closes 11:59PM',
+      'operating_hours': {'monday': '4:30–11:59PM',
+       'tuesday': '4:30–11:59PM',
+       'wednesday': '4:30–11:59PM',
+       'thursday': '4:30–11:59PM',
+       'friday': '4:30–11:59PM',
+       'saturday': '4:30–11:59PM',
+       'sunday': '4:30–11:59PM'},
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipP6umNgk9EVuULqnppjz6FNeLTPRfcQn0Sq7uGY=w80-h106-k-no'},
+     {'position': 3,
+      'title': 'Martabak Rizky Moro Sekaran',
+      'place_id': 'ChIJTbag59uLcC4ROYnugnLo3dI',
+      'data_id': '0x2e708bdbe7a0b64d:0xd2dde87282ee8939',
+      'data_cid': '15194556296338508089',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708bdbe7a0b64d%3A0xd2dde87282ee8939&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708bdbe7a0b64d%3A0xd2dde87282ee8939&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0523669, 'longitude': 110.3950605},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708bdbe7a0b64d%3A0xd2dde87282ee8939%218m2%213d-7.0523669%214d110.3950605&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.4,
+      'reviews': 61,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'W9XW+323, Jl. Taman Siswa, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '4PM–12AM',
+       'tuesday': '4PM–12AM',
+       'wednesday': '4PM–12AM',
+       'thursday': '4PM–12AM',
+       'friday': '4PM–12AM',
+       'saturday': '4PM–12AM',
+       'sunday': '4PM–12AM'},
+      'phone': '+62 815-7801-7000',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipN5fLCcEv-b7twZE2isZIw0tonKhRtTINSB9eEK=w122-h92-k-no'},
+     {'position': 4,
+      'title': 'Martabak pak agus',
+      'place_id': 'ChIJ83xNa1uLcC4RR0EfPuPAI1I',
+      'data_id': '0x2e708b5b6b4d7cf3:0x5223c0e33e1f4147',
+      'data_cid': '5918786417527308615',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708b5b6b4d7cf3%3A0x5223c0e33e1f4147&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708b5b6b4d7cf3%3A0x5223c0e33e1f4147&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0508239999999995,
+       'longitude': 110.42465779999999},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708b5b6b4d7cf3%3A0x5223c0e33e1f4147%218m2%213d-7.0508239999999995%214d110.42465779999999&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.4,
+      'reviews': 5,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'WCXF+MVF, Sumurboto, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50269, Indonesia',
+      'open_state': 'Open ⋅ Closes 11:45PM',
+      'hours': 'Open ⋅ Closes 11:45PM',
+      'operating_hours': {'monday': '3:30–11:45PM',
+       'tuesday': '3:30–11:45PM',
+       'wednesday': '3:30–11:45PM',
+       'thursday': '3:30–11:45PM',
+       'friday': '3:30–11:45PM',
+       'saturday': '3:30–11:45PM',
+       'sunday': '3:30–11:45PM'},
+      'phone': '+62 896-5884-4060',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipMJUmgnJ1h6S5nusJjvvaU0yrYpEkJn6yPJvRQ=w122-h92-k-no'},
+     {'position': 5,
+      'title': 'MARTABAK MANTUL',
+      'place_id': 'ChIJSWZ-namJcC4RXp0pOMblygI',
+      'data_id': '0x2e7089a99d7e6649:0x2cae5c638299d5e',
+      'data_cid': '201225772879945054',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e7089a99d7e6649%3A0x2cae5c638299d5e&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e7089a99d7e6649%3A0x2cae5c638299d5e&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.074808699999999,
+       'longitude': 110.4218873},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e7089a99d7e6649%3A0x2cae5c638299d5e%218m2%213d-7.074808699999999%214d110.4218873&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 33,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Cemara Raya No.18, Padangsari, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50267, Indonesia',
+      'open_state': 'Open ⋅ Closes 11PM',
+      'hours': 'Open ⋅ Closes 11PM',
+      'operating_hours': {'monday': '3–11PM',
+       'tuesday': '3–11PM',
+       'wednesday': '3–11PM',
+       'thursday': '3–11PM',
+       'friday': '3–11PM',
+       'saturday': '3–11PM',
+       'sunday': '3–11PM'},
+      'phone': '+62 858-1077-6478',
+      'service_options': {'dine_in': True,
+       'takeout': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipOyX8VHTSLUlXVlVouG0yYz8NmXaLZls4lT9awv=w92-h92-k-no'},
+     {'position': 6,
+      'title': 'Martabak Pak Agus',
+      'place_id': 'ChIJdfNah6qOcC4R3Va2Jg_SxrQ',
+      'data_id': '0x2e708eaa875af375:0xb4c6d20f26b656dd',
+      'data_cid': '13026329934731564765',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708eaa875af375%3A0xb4c6d20f26b656dd&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708eaa875af375%3A0xb4c6d20f26b656dd&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0566914999999995,
+       'longitude': 110.4291851},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708eaa875af375%3A0xb4c6d20f26b656dd%218m2%213d-7.0566914999999995%214d110.4291851&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.3,
+      'reviews': 96,
+      'price': '$$',
+      'unclaimed_listing': True,
+      'type': 'Asian restaurant',
+      'address': 'WCVH+8MF, Jl. Tirto Agung, Pedalangan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50268, Indonesia',
+      'open_state': 'Open ⋅ Closes 11PM',
+      'hours': 'Open ⋅ Closes 11PM',
+      'operating_hours': {'monday': '6AM–11PM',
+       'tuesday': '6AM–11PM',
+       'wednesday': '6AM–11PM',
+       'thursday': '6AM–11PM',
+       'friday': '6AM–11PM',
+       'saturday': '6AM–11PM',
+       'sunday': '6AM–11PM'},
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipN2iIrcooK5zD0Ckytyuddm2S7ZTyVYvz9HEW-G=w80-h142-k-no'},
+     {'position': 7,
+      'title': 'MARTABAK SETIABUDI "PAK MAN" Sukun Banyumanik',
+      'place_id': 'ChIJ-y6QEuyJcC4RGSwWFaIinSk',
+      'data_id': '0x2e7089ec12902efb:0x299d22a215162c19',
+      'data_cid': '2998591006432439321',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e7089ec12902efb%3A0x299d22a215162c19&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e7089ec12902efb%3A0x299d22a215162c19&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0648246, 'longitude': 110.4142667},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e7089ec12902efb%3A0x299d22a215162c19%218m2%213d-7.0648246%214d110.4142667&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 1,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Sukun Raya No.24, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263, Indonesia',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=SCCVatQsxckOkSLQ0Iicpw&cb_client=search.gws-prod.gps&w=80&h=92&yaw=6.710598&pitch=0&thumbfov=100'},
+     {'position': 8,
+      'title': 'Martabak Sumo Sumurboto Banyumanik',
+      'place_id': 'ChIJ9VwgxviLcC4RwTILsKVpmjk',
+      'data_id': '0x2e708bf8c6205cf5:0x399a69a5b00b32c1',
+      'data_cid': '4150746166919377601',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708bf8c6205cf5%3A0x399a69a5b00b32c1&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708bf8c6205cf5%3A0x399a69a5b00b32c1&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0517411999999995,
+       'longitude': 110.42613899999999},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708bf8c6205cf5%3A0x399a69a5b00b32c1%218m2%213d-7.0517411999999995%214d110.42613899999999&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.2,
+      'reviews': 82,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Ngesrep Tim. V No.88, Sumurboto, Banyumanik, Semarang City, Central Java 50269, Indonesia',
+      'open_state': 'Open ⋅ Closes 10PM',
+      'hours': 'Open ⋅ Closes 10PM',
+      'operating_hours': {'monday': '3–10PM',
+       'tuesday': '3–10PM',
+       'wednesday': '3–10PM',
+       'thursday': '3–10PM',
+       'friday': '3–10PM',
+       'saturday': '3–10PM',
+       'sunday': '3–10PM'},
+      'phone': '+62 821-3713-9961',
+      'service_options': {'dine_in': True,
+       'takeout': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipNmE4aomheXePUEIqRxKE9YUsKeY88kWjEzpMwz=w80-h106-k-no'},
+     {'position': 9,
+      'title': 'Martabak dan Kue Bandung 7 Saudara',
+      'place_id': 'ChIJm5tHJzWJcC4RulMFFVHvqbs',
+      'data_id': '0x2e70893527479b9b:0xbba9ef51150553ba',
+      'data_cid': '13522602487680684986',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e70893527479b9b%3A0xbba9ef51150553ba&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e70893527479b9b%3A0xbba9ef51150553ba&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.062395899999999,
+       'longitude': 110.3968345},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e70893527479b9b%3A0xbba9ef51150553ba%218m2%213d-7.062395899999999%214d110.3968345&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.8,
+      'reviews': 77,
+      'price': '$',
+      'unclaimed_listing': True,
+      'type': 'Restaurant',
+      'address': 'W9QW+2PW, Jl. Patemon, Patemon, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50228, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '3:30PM–12AM',
+       'tuesday': '3:30PM–12AM',
+       'wednesday': '3:30PM–12AM',
+       'thursday': '3:30PM–12AM',
+       'friday': '3:30PM–12AM',
+       'saturday': '3:30PM–12AM',
+       'sunday': '3:30PM–12AM'},
+      'phone': '+62 823-2419-5052',
+      'service_options': {'dine_in': True,
+       'takeout': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipO0ibvDe3eqwWtFbdnT0I4cQzE3ygxf31pmSwzC=w163-h92-k-no'},
+     {'position': 10,
+      'title': 'Martabak Djuara, Srondol Wetan Semarang',
+      'place_id': 'ChIJBaqg7cuJcC4RifS29ZYr82k',
+      'data_id': '0x2e7089cbeda0aa05:0x69f32b96f5b6f489',
+      'data_cid': '7634493720690619529',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e7089cbeda0aa05%3A0x69f32b96f5b6f489&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e7089cbeda0aa05%3A0x69f32b96f5b6f489&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0629199, 'longitude': 110.41315209999999},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e7089cbeda0aa05%3A0x69f32b96f5b6f489%218m2%213d-7.0629199%214d110.41315209999999&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 3.5,
+      'reviews': 2,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Setia Budi No.178, Srondol Wetan, Banyumanik, Semarang City, Central Java 50263, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '12PM–12AM',
+       'tuesday': '12PM–12AM',
+       'wednesday': '12PM–12AM',
+       'thursday': '12PM–12AM',
+       'friday': '12PM–12AM',
+       'saturday': '12PM–12AM',
+       'sunday': '12PM–12AM'},
+      'phone': '+62 811-8709-303',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipPEcp9sXfZgVw2SI9PoPmuu5g7GQUpGDAvbAtDP=w122-h92-k-no'},
+     {'position': 11,
+      'title': 'Martabak dan kue bandung pak man setia budi',
+      'place_id': 'ChIJFwKk_52JcC4RRAM7wS6prp0',
+      'data_id': '0x2e70899dffa40217:0x9daea92ec13b0344',
+      'data_cid': '11362204928177800004',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e70899dffa40217%3A0x9daea92ec13b0344&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e70899dffa40217%3A0x9daea92ec13b0344&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0750993, 'longitude': 110.4171477},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e70899dffa40217%3A0x9daea92ec13b0344%218m2%213d-7.0750993%214d110.4171477&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 39,
+      'type': 'Restaurant',
+      'address': 'Jl. Kr. Rejo Raya No.54a, RT.01/RW.03, Srondol Wetan, Banyumanik, Semarang City, Central Java 50263, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '3PM–12AM',
+       'tuesday': '3PM–12AM',
+       'wednesday': '3PM–12AM',
+       'thursday': '3PM–12AM',
+       'friday': '3PM–12AM',
+       'saturday': '3PM–12AM',
+       'sunday': '3PM–12AM'},
+      'phone': '+62 821-3408-5971',
+      'service_options': {'dine_in': True, 'takeout': True, 'delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipNH8RNbqzhhcDCuzd5zw98wuSWJkfeSbfM9yk_L=w122-h92-k-no'},
+     {'position': 12,
+      'title': 'MARTABAK DAN KUE BANDUNG MANGGALA JATI RAYA BANYUMANIK',
+      'place_id': 'ChIJe9hYebiJcC4Rd1TzYTwV8as',
+      'data_id': '0x2e7089b87958d87b:0xabf1153c61f35477',
+      'data_cid': '12389707398958503031',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e7089b87958d87b%3A0xabf1153c61f35477&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e7089b87958d87b%3A0xabf1153c61f35477&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.069603799999999,
+       'longitude': 110.4184439},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e7089b87958d87b%3A0xabf1153c61f35477%218m2%213d-7.069603799999999%214d110.4184439&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.6,
+      'reviews': 18,
+      'type': 'Restaurant',
+      'address': 'Jl. Jati Raya No.F1, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263, Indonesia',
+      'open_state': 'Open ⋅ Closes 11:45PM',
+      'hours': 'Open ⋅ Closes 11:45PM',
+      'operating_hours': {'monday': '3–11:45PM',
+       'tuesday': '3–10PM',
+       'wednesday': '3–11:45PM',
+       'thursday': '3–11:45PM',
+       'friday': '3–11PM',
+       'saturday': '3–11:45PM',
+       'sunday': '3–11:45PM'},
+      'phone': '+62 819-0102-3217',
+      'service_options': {'dine_in': True,
+       'takeout': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipN5fwRGGVc7cPAl2wcxHnwSxsXZUv2zUnxlaRxU=w122-h92-k-no'},
+     {'position': 13,
+      'title': 'Kue Bandung & Martabak Telor Setiabudi',
+      'place_id': 'ChIJ2WL6Vf-LcC4R49SRAifNULk',
+      'data_id': '0x2e708bff55fa62d9:0xb950cd270291d4e3',
+      'data_cid': '13353398462584050915',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708bff55fa62d9%3A0xb950cd270291d4e3&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708bff55fa62d9%3A0xb950cd270291d4e3&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.051742, 'longitude': 110.4260781},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708bff55fa62d9%3A0xb950cd270291d4e3%218m2%213d-7.051742%214d110.4260781&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.6,
+      'reviews': 60,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Prof. Sudarto No.88, Sumurboto, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50269, Indonesia',
+      'open_state': 'Open ⋅ Closes 11:45PM',
+      'hours': 'Open ⋅ Closes 11:45PM',
+      'operating_hours': {'monday': '4–11:45PM',
+       'tuesday': '4–11:45PM',
+       'wednesday': '4–11:45PM',
+       'thursday': '4–11:45PM',
+       'friday': '4–11:45PM',
+       'saturday': '4–11:45PM',
+       'sunday': '4–11:45PM'},
+      'phone': '+62 818-455-605',
+      'service_options': {'dine_in': True, 'takeout': True, 'delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipP1Q2897jCjBI5lKMnVpzv97116XVIBKZKc5zdr=w122-h92-k-no'},
+     {'position': 14,
+      'title': 'Kue bandung dan martabak telor Pak Kumis',
+      'place_id': 'ChIJMxIuT36PcC4Rm1YXS1yhHvA',
+      'data_id': '0x2e708f7e4f2e1233:0xf01ea15c4b17569b',
+      'data_cid': '17302444236172908187',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708f7e4f2e1233%3A0xf01ea15c4b17569b&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708f7e4f2e1233%3A0xf01ea15c4b17569b&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0627641, 'longitude': 110.426642},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708f7e4f2e1233%3A0xf01ea15c4b17569b%218m2%213d-7.0627641%214d110.426642&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 6,
+      'unclaimed_listing': True,
+      'type': 'Restaurant',
+      'address': 'WCPG+VMR, Pedalangan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50268, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '4PM–12AM',
+       'tuesday': '4PM–12AM',
+       'wednesday': '4PM–12AM',
+       'thursday': '4PM–12AM',
+       'friday': '4PM–12AM',
+       'saturday': '4PM–12AM',
+       'sunday': '4PM–12AM'},
+      'phone': '+62 857-4771-0130',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipN-u-4lSv-HDBE9Y8M9NCEcXNJNeJPC6RH8tj22=w163-h92-k-no'},
+     {'position': 15,
+      'title': 'Martabak Bangka Podo Moro',
+      'place_id': 'ChIJ-8_-SiaJcC4RgFptoAWFvnI',
+      'data_id': '0x2e7089264afecffb:0x72be8505a06d5a80',
+      'data_cid': '8268192225111661184',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e7089264afecffb%3A0x72be8505a06d5a80&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e7089264afecffb%3A0x72be8505a06d5a80&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0642305, 'longitude': 110.4254414},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e7089264afecffb%3A0x72be8505a06d5a80%218m2%213d-7.0642305%214d110.4254414&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'WCPG+854, Jl. Durian Raya, Pedalangan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263, Indonesia',
+      'open_state': 'Open ⋅ Closes 10:30PM',
+      'hours': 'Open ⋅ Closes 10:30PM',
+      'operating_hours': {'monday': '4–10:30PM',
+       'tuesday': '4–10:30PM',
+       'wednesday': '4–10:30PM',
+       'thursday': '4–10:30PM',
+       'friday': '4–10:30PM',
+       'saturday': '4–10:30PM',
+       'sunday': '4–10:30PM'},
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=9hv4BQE4lnyH02TT1eqtAw&cb_client=search.gws-prod.gps&w=80&h=92&yaw=286.27304&pitch=0&thumbfov=100'},
+     {'position': 16,
+      'title': 'Martabak Cahaya Rasa',
+      'place_id': 'ChIJ9WTix4yPcC4RVgteaBLI7qE',
+      'data_id': '0x2e708f8cc7e264f5:0xa1eec812685e0b56',
+      'data_cid': '11668483665949494102',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708f8cc7e264f5%3A0xa1eec812685e0b56&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708f8cc7e264f5%3A0xa1eec812685e0b56&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.058720999999999,
+       'longitude': 110.43518159999999},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708f8cc7e264f5%3A0xa1eec812685e0b56%218m2%213d-7.058720999999999%214d110.43518159999999&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.3,
+      'reviews': 6,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'Gg. Bharata No.35b, Pedalangan, Tembalang, Semarang City, Central Java 50275, Indonesia',
+      'open_state': 'Open ⋅ Closes 11PM',
+      'hours': 'Open ⋅ Closes 11PM',
+      'operating_hours': {'monday': '3–11PM',
+       'tuesday': '3–11PM',
+       'wednesday': '3–11PM',
+       'thursday': '3–11PM',
+       'friday': '3–11PM',
+       'saturday': '3–11PM',
+       'sunday': '3–11PM'},
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipMr9DVc-Fk8LTQMvzY04we0tod3r1K7E5yvkX6B=w163-h92-k-no'},
+     {'position': 17,
+      'title': 'Martabak top bangka 91',
+      'place_id': 'ChIJ3VaigC-LcC4RUmhkbJ2RRgw',
+      'data_id': '0x2e708b2f80a256dd:0xc46919d6c646852',
+      'data_cid': '884554482139293778',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708b2f80a256dd%3A0xc46919d6c646852&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708b2f80a256dd%3A0xc46919d6c646852&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0573076, 'longitude': 110.3964551},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708b2f80a256dd%3A0xc46919d6c646852%218m2%213d-7.0573076%214d110.3964551&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 5,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'W9VW+3HG, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '4PM–12AM',
+       'tuesday': '4PM–12AM',
+       'wednesday': '4PM–12AM',
+       'thursday': '4PM–12AM',
+       'friday': '4PM–12AM',
+       'saturday': '4PM–12AM',
+       'sunday': '4PM–12AM'},
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipOutX4eaNWcE6Zn-auPsUyByifnk2BVc4iznYt7=w80-h169-k-no'},
+     {'position': 18,
+      'title': 'Martabak Sabar Menanti',
+      'place_id': 'ChIJsxzQ5qyLcC4R1eKGDte8w-M',
+      'data_id': '0x2e708bace6d01cb3:0xe3c3bcd70e86e2d5',
+      'data_cid': '16412169098915930837',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708bace6d01cb3%3A0xe3c3bcd70e86e2d5&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708bace6d01cb3%3A0xe3c3bcd70e86e2d5&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0568538, 'longitude': 110.3945572},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708bace6d01cb3%3A0xe3c3bcd70e86e2d5%218m2%213d-7.0568538%214d110.3945572&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 5,
+      'reviews': 4,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'W9VV+7R3, Jl. Kolonel HR Hadijanto, Patemon, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50228, Indonesia',
+      'open_state': 'Open ⋅ Closes 11PM',
+      'hours': 'Open ⋅ Closes 11PM',
+      'operating_hours': {'monday': '4–11PM',
+       'tuesday': '4–11PM',
+       'wednesday': '4–11PM',
+       'thursday': '4–11PM',
+       'friday': '4–11PM',
+       'saturday': '4–11PM',
+       'sunday': '4–11PM'},
+      'phone': '+62 852-3280-2705',
+      'service_options': {'dine_in': True, 'takeout': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipNCiIUwop90moOdYfIYbbgBrZXzNqddIMCAoxCU=w80-h142-k-no'},
+     {'position': 19,
+      'title': 'Kue Bandung Dan Martabak Telur',
+      'place_id': 'ChIJGXxWMKiOcC4RJQ-KpuurQv8',
+      'data_id': '0x2e708ea830567c19:0xff42abeba68a0f25',
+      'data_cid': '18393452856734256933',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708ea830567c19%3A0xff42abeba68a0f25&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708ea830567c19%3A0xff42abeba68a0f25&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0568566, 'longitude': 110.4357347},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708ea830567c19%3A0xff42abeba68a0f25%218m2%213d-7.0568566%214d110.4357347&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.3,
+      'reviews': 4,
+      'unclaimed_listing': True,
+      'type': 'Murtabak restaurant',
+      'address': 'WCVP+775, Jl. KH. Sirojudin, Tembalang, Kec. Tembalang, Kota Semarang, Jawa Tengah 50275, Indonesia',
+      'open_state': 'Open ⋅ Closes 12AM',
+      'hours': 'Open ⋅ Closes 12AM',
+      'operating_hours': {'monday': '4PM–12AM',
+       'tuesday': '4PM–12AM',
+       'wednesday': '4PM–12AM',
+       'thursday': '4PM–12AM',
+       'friday': '4PM–12AM',
+       'saturday': '4PM–12AM',
+       'sunday': '4PM–12AM'},
+      'service_options': {'dine_in': True,
+       'takeout': True,
+       'no_contact_delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipMVXlH8EGuXt1TbTmHLkfwofwQ1STuVAV0ZANNE=w122-h92-k-no'},
+     {'position': 20,
+      'title': 'Martabak Favorite 97 Sekaran',
+      'place_id': 'ChIJAXBzYUWLcC4RwDwuhk4Vu64',
+      'data_id': '0x2e708b4561737001:0xaebb154e862e3cc0',
+      'data_cid': '12590680610247163072',
+      'reviews_link': 'https://serpapi.com/search.json?data_id=0x2e708b4561737001%3A0xaebb154e862e3cc0&engine=google_maps_reviews&hl=en',
+      'photos_link': 'https://serpapi.com/search.json?data_id=0x2e708b4561737001%3A0xaebb154e862e3cc0&engine=google_maps_photos&hl=en',
+      'gps_coordinates': {'latitude': -7.0549798, 'longitude': 110.3947828},
+      'place_id_search': 'https://serpapi.com/search.json?data=%214m5%213m4%211s0x2e708b4561737001%3A0xaebb154e862e3cc0%218m2%213d-7.0549798%214d110.3947828&engine=google_maps&google_domain=google.com&hl=en&type=place',
+      'rating': 4.7,
+      'reviews': 3,
+      'type': 'Murtabak restaurant',
+      'address': 'Jl. Taman Siswa No.84, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229, Indonesia',
+      'open_state': 'Open ⋅ Closes 11:30PM',
+      'hours': 'Open ⋅ Closes 11:30PM',
+      'operating_hours': {'monday': '4:30–11:30PM',
+       'tuesday': '4:30–11:30PM',
+       'wednesday': '4:30–11:30PM',
+       'thursday': '4:30–11:30PM',
+       'friday': '4:30–11:30PM',
+       'saturday': '4:30–11:30PM',
+       'sunday': '4:30–11:30PM'},
+      'phone': '+62 819-1151-2915',
+      'service_options': {'dine_in': True,
+       'curbside_pickup': True,
+       'delivery': True},
+      'thumbnail': 'https://lh5.googleusercontent.com/p/AF1QipNMJNXNEoTt2MimuyV8IhJabnHu6lw39auVFnaE=w163-h92-k-no'}]
+
+    # Position 1
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708960b2cf497f:0x999815ebdb02727a",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # Position 2
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708bdb946c4039:0xd27e8d40e3f1f77e",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 3
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708960b2cf497f:0x999815ebdb02727a",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 4
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e7089a99d7e6649:0x2cae5c638299d5e",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 5
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708eaa875af375:0xb4c6d20f26b656dd",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    #position 6
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708eaa875af375:0xb4c6d20f26b656dd",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 7
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708960b2cf497f:0x999815ebdb02727a",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    #position 8
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e708bf8c6205cf5:0x399a69a5b00b32c1",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 9
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e70893527479b9b:0xbba9ef51150553ba",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+    # position 10
+    from serpapi import GoogleSearch
+
+    params = {
+      "engine": "google_maps_reviews",
+      "data_id": "0x2e70899dffa40217:0x9daea92ec13b0344",
+      "api_key": "804b9e609b9a199d2d7f8c1e19053263ab6d45e682b684aca86ffee00dd4c2f9"
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    reviews = results["reviews"]
+
+    https://serpapi.com/search
+
+    results
+
+    for i in range(10):
+      rating = results ["reviews"][i]["rating"]
+      print(rating)
+      reviews = results ["reviews"][i]["snippet"]
+      print(reviews)
+
+
+    ## ----- CASE FOLDING ----- ##
+
+
+    # 1. Mengubah text menjadi lowercase
+    kalimat = "5.0 The egg martabak is tasty, you can request a tipker for the Bandung cake, aka dry thin (Original) Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering"
+    lower_case = kalimat.lower()
+    print(lower_case)
+
+    5.0 the egg martabak is tasty, you can request a tipker for the bandung cake, aka dry thin (original) martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering
+
+    # 2. Menghapus angka
+    import re #impor modul regular expressio
+    kalimat = "5.0 The egg martabak is tasty, you can request a tipker for the Bandung cake, aka dry thin (Original) Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering"
+    hasil = re.sub(r"\d+","", kalimat)
+    print (hasil)
+
+    . The egg martabak is tasty, you can request a tipker for the Bandung cake, aka dry thin (Original) Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering
+
+    # 3. Menghapus tanda baca
+    import string
+    kalimat = "5.0 The egg martabak is tasty, you can request a tipker for the Bandung cake, aka dry thin (Original) Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering"
+    hasil = kalimat.translate(str.maketrans("","",string.punctuation))
+    print (hasil)
+
+    50 The egg martabak is tasty you can request a tipker for the Bandung cake aka dry thin Original Martabak telornya gurih bisa request tipker buat kue bandungnya alias tipis kering
+
+    # >>>>> TOKENIZING <<<<< #
+
+        
+    import nltk
+    nltk.download('book')
+    #or
+    nltk.download('tests')
+    #or
+    nltk.download('all-corpora')# not recommended as it download huge amount of data.
+
+    # impor word_tokenize dari modul nltk
+    from nltk.tokenize import sent_tokenize, word_tokenize
+    kalimat = "5.0 The egg martabak is tasty, you can request a tipker for the Bandung cake, aka dry thin (Original) Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering"
+    tokens = word_tokenize(kalimat)
+    print(tokens)
+
+    ['5.0', 'The', 'egg', 'martabak', 'is', 'tasty', ',', 'you', 'can', 'request', 'a', 'tipker', 'for', 'the', 'Bandung', 'cake', ',', 'aka', 'dry', 'thin', '(', 'Original', ')', 'Martabak', 'telornya', 'gurih', ',', 'bisa', 'request', 'tipker', 'buat', 'kue', 'bandungnya', 'alias', 'tipis', 'kering']
+
+    # >>>>> STOPWORD REMOVAL(FILTERING) <<<<< #
+
+     # Filtering dengan sastrawi
+    !pip install Sastrawi
+
+    Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+    Collecting Sastrawi
+      Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
+
+    # Daftar stopword yang tersedia di library Sastrawi
+    from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
+    factory = StopWordRemoverFactory()
+    stopwords = factory.get_stop_words()
+    print(stopwords)
+
+    ['yang', 'untuk', 'pada', 'ke', 'para', 'namun', 'menurut', 'antara', 'dia', 'dua', 'ia', 'seperti', 'jika', 'jika', 'sehingga', 'kembali', 'dan', 'tidak', 'ini', 'karena', 'kepada', 'oleh', 'saat', 'harus', 'sementara', 'setelah', 'belum', 'kami', 'sekitar', 'bagi', 'serta', 'di', 'dari', 'telah', 'sebagai', 'masih', 'hal', 'ketika', 'adalah', 'itu', 'dalam', 'bisa', 'bahwa', 'atau', 'hanya', 'kita', 'dengan', 'akan', 'juga', 'ada', 'mereka', 'sudah', 'saya', 'terhadap', 'secara', 'agar', 'lain', 'anda', 'begitu', 'mengapa', 'kenapa', 'yaitu', 'yakni', 'daripada', 'itulah', 'lagi', 'maka', 'tentang', 'demi', 'dimana', 'kemana', 'pula', 'sambil', 'sebelum', 'sesudah', 'supaya', 'guna', 'kah', 'pun', 'sampai', 'sedangkan', 'selagi', 'sementara', 'tetapi', 'apakah', 'kecuali', 'sebab', 'selain', 'seolah', 'seraya', 'seterusnya', 'tanpa', 'agak', 'boleh', 'dapat', 'dsb', 'dst', 'dll', 'dahulu', 'dulunya', 'anu', 'demikian', 'tapi', 'ingin', 'juga', 'nggak', 'mari', 'nanti', 'melainkan', 'oh', 'ok', 'seharusnya', 'sebetulnya', 'setiap', 'setidaknya', 'sesuatu', 'pasti', 'saja', 'toh', 'ya', 'walau', 'tolong', 'tentu', 'amat', 'apalagi', 'bagaimanapun']
+
+
+    # imort StopWordRemoverFactory class
+    from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
+    factory = StopWordRemoverFactory()
+    stopword = factory.create_stop_word_remover()
+    # Kalimat
+    kalimat = "Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering"
+    stop = stopword.remove(kalimat)
+    print(stop)
+
+    Martabak telornya gurih, request tipker buat kue bandungnya alias tipis kering
+
+    # >>>>> STEMMING <<<<< #
+
+    # Stemming dengan sastrawi
+    !pip install Sastrawi
+
+    Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+    Requirement already satisfied: Sastrawi in /usr/local/lib/python3.7/dist-packages (1.0.1)
+
+
+    # import StemmerFactory class
+    from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+    factory = StemmerFactory()
+    stemmer = factory.create_stemmer()
+    kalimat = 'Martabak telornya gurih, bisa request tipker buat kue bandungnya alias tipis kering'
+    hasil = stemmer.stem(kalimat)
+    print(hasil)
+
+    martabak telor gurih bisa request tipker buat kue bandung alias tipis kering
